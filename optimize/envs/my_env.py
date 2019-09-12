@@ -44,7 +44,7 @@ class hills(gym.Env):
 
         f1 = self._height(*new_state)
         reward = f1 - f0   #  delta f
-        done = bool(x<10 or x>-10 or y<10 or y >10) # agent moved outside defined boundary
+        done = bool(x<10 or x>-10 or y<-10 or y >10) # agent moved outside defined boundary
 
         self.state = new_state
         return np.array(self.state), reward, done, {}
