@@ -1,4 +1,4 @@
-from optimization_1.envs.my_env import hills
+from optimize.envs.my_env import hills
 
 
 
